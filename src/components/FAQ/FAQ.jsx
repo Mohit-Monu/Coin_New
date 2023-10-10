@@ -51,7 +51,7 @@ function FAQ() {
       ),
     },
     {
-      question: "How we work?",
+      question: "How to use?",
       answer: (
         // <p>Our investment platform is designed to make the investment process seamless and hassle-free: </p>
         <ol>
@@ -66,9 +66,6 @@ function FAQ() {
       question: "Join Thousands of Savvy Investors",
       answer: [
         "Our growing community of investors is already reaping the rewards. Are you ready to be a part of it?",
-        <div className="text-end"> {/* Use Bootstrap utility class for right alignment */}
-          <button className="btn btn-primary">Sign Up Today</button>
-        </div>
       ],
     },
     // Add more questions and answers as needed
@@ -83,9 +80,9 @@ function FAQ() {
   };
 
   return (
-    <div>
-      <h1>FAQ</h1>
-      <div className="accordion-header" id="faqAccordion">
+    <div  className="container">
+      <h1 className="text-center m-2">FAQ</h1>
+      <div className="accordion-header" style={{paddingBottom:"20px",marginTop:"20px"}} id="faqAccordion">
         {questions.map((q, index) => (
           <div className="card" key={index}>
             <div className="card-header" id={`faqHeading${index}`}>

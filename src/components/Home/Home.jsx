@@ -1,17 +1,12 @@
 import React from "react";
-
+import home1 from "../../assets/home1.jpg"
+import Button from 'react-bootstrap/Button';
+import classes from "./Home.module.css"
 function Home() {
   return (
-    <div>
-      <div className="video-background">
-        <video autoPlay loop muted>
-          <source src="/path-to-your-video.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div className="text-over-video">
-        <h1>Welcome to Coin.New</h1>
-        <p>Coin New...</p>
-      </div>
+    <div >
+     <img src={home1} style={{width:"100%",height:"600px"}}/>
+     <Button className={classes.buttonStyled} variant="primary">Download Now</Button>
     </div>
   );
 }
